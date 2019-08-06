@@ -1,0 +1,13 @@
+service: cisc_3140_luhn_algo_miriam_briskman
+runtime: python37
+api_version: 1
+threadsafe: yes
+
+inbound_services:
+- warmup
+
+handlers:
+# All URLs beginning with /static are treated as paths to
+# static files in the static/ directory.
+- url: /static
+  static_dir: static
