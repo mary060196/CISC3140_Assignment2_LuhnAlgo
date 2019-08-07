@@ -1,4 +1,6 @@
 steps:
-- name: 'gcr.io/cloud-builders/git'
-  args: ['clone', 'https://github.com/GoogleCloudPlatform/cloud-builders']
-  dir: 'examples/hello_world'
+#- name: 'gcr.io/cloud-builders/git'
+#  args: ['clone', 'https://github.com/GoogleCloudPlatform/cloud-builders']
+#  dir: 'examples/hello_world'
+- name: 'gcr.io/cloud-builders/gcloud'
+  args: ['app', 'deploy']
